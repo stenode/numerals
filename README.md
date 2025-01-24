@@ -1,5 +1,7 @@
 # numerals
 
+Please visit our [Discussions](https://github.com/orgs/stenode/discussions) page to share your feedback.
+
 ## Summary
 
 Numerals is a [profile]() that uses certain conventions to identify different numeric types without breaking JSON compatibility. 
