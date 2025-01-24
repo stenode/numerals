@@ -15,8 +15,8 @@ JSON `number` follows the format: `[ minus ] int [ frac ] [ exp ]`. The below de
 | Data Type   | Size (bytes)| Description                     | JSON Schema | OpenAPI | GraphQL | Protobuf | Numerals Format                      | Examples              |
 |-------------|-------------|---------------------------------|-------------|---------|---------|----------|--------------------------------------|-----------------------|
 | smallint    | 2           | small-range integer             | integer     | int16   | Int     | int32    | `[ minus ] int`                      | -4, 1                 |
-| integer     | 4           | typical choice for integer      | integer     | int32   | Int     | int32    | `[ minus ] int exp(with 'e')`        | -4e2, 47483647        |
-| bigint      | 8           | large-range integer             | integer     | int64   | Int     | int64    | `[ minus ] int exp(with 'E')`        | 4E5, 51241228399      |
+| integer     | 4           | typical choice for integer      | integer     | int32   | Int     | int32    | `[ minus ] int [exp(with 'e')]`      | -4e2, 47483647        |
+| bigint      | 8           | large-range integer             | integer     | int64   | Int     | int64    | `[ minus ] int [exp(with 'E')]`      | 4E5, 51241228399      |
 | float(real) | 4           | variable-precision, inexact     | number      | float   | Float   | float    | `[ minus ] int frac exp(with 'e')`   | 4.12e-2, 2.314e0      |
 | double      | 8           | variable-precision, inexact     | number      | double  | Float   | double   | `[ minus ] int frac exp(with 'E')`   | 4.5E2, 1.112E0        |
 | decimal     | ?           | user-specified precision, exact | number      | decimal | Float   | double   | `[ minus ] int frac exp(with 'E00')` | -4.19920, 0.199e-0012 |
